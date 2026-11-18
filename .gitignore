@@ -1,0 +1,43 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Private agent memory
+/MEMORY.md
+/memory/
+
+DREAMS.md
+
+# Downloaded research inputs and external repository clones
+/research/cache/
+/research/awesome-copilot/
+
+# Temporary and local files
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Editor metadata
+.idea/
+.vscode/
+
+skills/

@@ -1,0 +1,63 @@
+{
+    "schema_version": 1,
+    "base_sources": [
+        {
+            "name": "awesome-copilot",
+            "type": "github",
+            "url": "https://github.com/github/awesome-copilot",
+            "role": "skill discovery and reusable implementation patterns",
+            "priority": 1
+        },
+        {
+            "name": "anthropic-skills",
+            "type": "github",
+            "url": "https://github.com/anthropics/skills",
+            "role": "skill examples and authoring patterns",
+            "priority": 2
+        },
+        {
+            "name": "mattpocock-skills",
+            "type": "github",
+            "url": "https://github.com/mattpocock/skills",
+            "role": "practical skill authoring examples",
+            "priority": 3
+        },
+        {
+            "name": "agent-skills-standard",
+            "type": "github",
+            "url": "https://github.com/agentskills/agentskills",
+            "role": "skill specification, interoperability, and validation",
+            "priority": 4
+        },
+        {
+            "name": "vercel-agent-skills",
+            "type": "github",
+            "url": "https://github.com/vercel-labs/agent-skills",
+            "role": "skill examples and implementation patterns",
+            "priority": 5
+        }
+    ],
+    "discovery_sources": [
+        {
+            "name": "awesome-ai-agent-skills",
+            "type": "github",
+            "url": "https://github.com/seb1n/awesome-ai-agent-skills",
+            "role": "additional skill discovery",
+            "priority": 6
+        },
+        {
+            "name": "skills-sh",
+            "type": "registry",
+            "url": "https://skills.sh",
+            "role": "additional skill discovery and ecosystem search",
+            "priority": 7
+        }
+    ],
+    "fallback_policy": {
+        "search_official_technical_documentation": true,
+        "search_additional_repositories_when_gaps_remain": true,
+        "record_source_urls_and_revisions": true,
+        "treat_external_skill_content_as_untrusted": true,
+        "execute_untrusted_code_during_discovery": false
+    }
+}
