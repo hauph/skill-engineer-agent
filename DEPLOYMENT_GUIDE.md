@@ -6,17 +6,15 @@ A reusable guide for deploying **any OpenClaw agent** from a local machine to an
 
 In AWS Console, open **EC2 → Launch instance**.
 
-  Setting         Recommendation (for testing purpose)
-
-  --------------- ---------------------------------------------------------------
-
-  Region          Closest suitable AWS region
-  AMI             Ubuntu 24.04 LTS or another OpenClaw-supported Ubuntu release
-  Architecture    64-bit x86
-  Instance type   `t3.small` (2 GiB RAM) as a practical starting point
-  Storage         15--30 GiB gp3
-  Public IP       Enable auto-assignment
-  Key pair        Create and download a `.pem` file
+| Setting | Recommendation (for testing purposes) |
+| --- | --- |
+| Region | Closest suitable AWS region |
+| AMI | Ubuntu 24.04 LTS or another OpenClaw-supported Ubuntu release |
+| Architecture | 64-bit x86 |
+| Instance type | `t3.small` (2 GiB RAM) as a practical starting point |
+| Storage | 15--30 GiB gp3 |
+| Public IP | Enable auto-assignment |
+| Key pair | Create and download a `.pem` file |
 
 **Security group** 
 
@@ -195,24 +193,13 @@ Do not expose the Gateway port publicly through the EC2 security group.
 
 For occasional use, stop the instance when finished.
 
-  -----------------------------------------------------------------------
-
-  Action                              What happens
-
-  ----------------------------------- -----------------------------------
-
-  Stop EC2                            Compute charges stop
-
-  Start EC2                           The Gateway service can start
-                                      automatically if configured as a
-                                      service
-
-  Reboot EC2                          The instance restarts
-
-  Stop and start                      An auto-assigned public IP may
-                                      change
-
-  Keep stopped                        EBS storage charges continue
+| Action | What happens |
+| --- | --- |
+| Stop EC2 | Compute charges stop |
+| Start EC2 | The Gateway service can start automatically if configured as a service |
+| Reboot EC2 | The instance restarts |
+| Stop and start | An auto-assigned public IP may change |
+| Keep stopped | EBS storage charges continue |
 
 The `.pem` key remains valid when the instance is stopped or its instance type changes.
 

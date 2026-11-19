@@ -30,6 +30,7 @@ Search snippets are not treated as verified content. The agent inspects actual s
 ├── SOUL.md                    # Agent behavior
 ├── USER.md                    # Stable user preferences
 ├── IDENTITY.md                # Agent identity metadata
+├── DEPLOYMENT_GUIDE.md        # Instructions on how to deploy the agent to EC2
 ├── config/
 │   └── sources.json           # Research sources and fallback policy
 ├── templates/
